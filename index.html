@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Every Paw Deserves Love</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Every Paw Deserves Love 🐾</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#why-adopt">Why Adopt?</a></li>
+        <li><a href="#our-cats">Our Cats</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#help">Help</a></li>
+
+      </ul>
+    </nav>
+  </header>
+  <section id="home"class="hero">
+    <div class="hero-text">
+      <h2>Adopt a Cat, Fill Your Heart with Purrs 💗</h2>
+      <h4>when you adopt, you're not just gaining a friend - you're giving a homeless cat a second chance at a happy, healthy life.</h4>
+      <h4>🐾Adopt, Don't shop!</h4>
+      <p>🧡💛💚💙💜🖤</p>
+      <button>Adopt Now</button>
+    </div>
+    <div class="hero-img">
+      <img src="hero-cat2.jpg" alt="Cute Cat">
+    </div>
+  </section>
+  <section id="why-adopt" class="why-adopt fade-in">
+  <h2>Why Adopt a Cat?</h2>
+
+  <div class="benefits-container">
+    <div class="benefit">
+      <img src="B1.jpg" alt="Healthy Heart">
+      <h3>Healthy Heart</h3>
+      <p>Studies show that cat owners have a lower risk of heart attacks and strokes - their calm purring lowers blood pressure and stress levels.
+</p>🩺❤️
+    </div>
+
+    <div class="benefit">
+      <img src="B22.jpg" alt="better sleep">
+      <h3>Improves sleep Quality</h3>
+      <p>Sleeping next to a cat provides warmth and comfort - many people report better and deeper sleep with feline companionship.</p>😴
+    </div>
+
+    <div class="benefit">
+      <img src="B333.jpg" alt="Stress relief">
+      <h3>Natural Stress Relievers</h3>
+      <p>Petting a cat release OXYTOCIN The "Love hormone" - which reduces anxiety and makes you feel relaxed instantly.</p>❤️💌
+    </div>
+  </div>
+</section>
+  <section id="our-cats" class="Our-cats">
+    <h2 class="section-title">Meet Our Lovely Cats</h2>
+
+    <div class="breed-container">
+      <div class="cat-card">
+        <img src="cat11.jpg" alt="Bombay Cat">
+        <h3>Bombay Cat</h3>
+        <p>Elegant and loving, the mini black panther with golden eyes from India.</p>
+        <button>Adopt Me</button>
+      </div>
+
+      <div class="cat-card">
+        <img src="cat2.jpg" alt="Turkish Angora">
+        <h3>Turkish Angora</h3>
+        <p>Graceful and gentle with long silky fur and a heart full of love.</p>
+        <button>Adopt Me</button>
+      </div>
+      <div class="cat-card">
+        <img src="cat3.jpg" alt="Indian Shorthair">
+        <h3>Indian Shorthair</h3>
+        <p>Playful, loyal, and perfectly suited for Indian homes — the true desi cat.</p>
+        <button>Adopt Me</button>
+      </div>
+
+      <div class="cat-card">
+        <img src="cat5.jpg" alt="Himalayan Cat">
+        <h3>Himalayan Cat</h3>
+        <p>Calm and fluffy, known for her blue eyes and loving nature.</p>
+        <button>Adopt Me</button>
+      </div>
+      <div class="cat-card">
+        <img src="cat55.jpg" alt="Siamese Cat">
+        <h3>Siamese Cat</h3>
+        <p>Talkative, affectionate, and always ready to be your best friend.</p>
+        <button>Adopt Me</button>
+      </div>
+
+      <div class="cat-card">
+        <img src="cat6.jpg" alt="Persian Cat">
+        <h3>Persian Cat</h3>
+        <p>Peaceful, soft, and graceful — a perfect cuddle partner for quiet homes.</p>
+        <button>Adopt Me</button>
+      </div>
+    
+          <div class="cat-card">
+        <img src="cat7.jpg" alt="Tabby Cat">
+        <h3>Tabby Cat</h3>
+        <p>They’ll love you deeply, but they also enjoy their “me-time.”
+</p>
+        <button>Adopt Me</button>
+      </div>
+    
+          <div class="cat-card">
+        <img src="cat8.jpg" alt="Birman Cat">
+        <h3>Birman Cat</h3>
+        <p>They’re one of the most peaceful cat breeds.
+Birmans are great with children, elderly people, and even other pets — truly friendly companions.</p>
+        <button>Adopt Me</button>
+      </div>
+    </div>
+    <section id="adoption-process" class="adoption-process">
+  <h2>🐾 Our Adoption Process</h2>
+  <div class="steps-container">
+    <div class="steps">
+      <div class="step">1️⃣ Choose Your Cat</div>
+      <div class="step">2️⃣ Fill Out Application</div>
+      <div class="step">3️⃣ Meet & Greet</div>
+      <div class="step">4️⃣ Home Visit</div>
+      <div class="step">5️⃣ Congratulations — your new journey with your cat begins!</div>
+    </div>
+  </div>
+</section>
+<!-- Adoption Form Section -->
+<section id="adoption-form" class="adoption-form">
+  <div class="adopt-intro">
+    <h2>🐾 Want to Adopt a Cat?</h2>
+    <p>Click the button below to fill the adoption form.</p>
+    <button id="show-form-btn">Fill the Form 📝</button>
+  </div>
+
+  <form id="form-content" onsubmit="return showThankYouMessage(event)">
+    <h3>Adoption Application Form</h3>
+
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="cat">Preferred Cat Type:</label>
+    <select id="cat" name="cat">
+      <option value="">--Select a cat--</option>
+      <option value="persian">Persian Cat</option>
+      <option value="siamese">Siamese Cat</option>
+      <option value="Turkish Angora">Turkish angora</option>
+      <option value="Tabby cat">Tabby cat</option>
+      <option value="Shorthair cat">Shorthair cat</option>
+      <option value="Himalayan cat">Himalayan cat</option>
+      <option value="Bombay cat">Bombay cat</option>
+      <option value="birman cat">Birman cat</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="reason">Why do you want to adopt a cat?</label>
+    <textarea id="reason" name="reason" rows="4" placeholder="Write your reason here..." required></textarea>
+
+    <button type="submit">Submit Application</button>
+  </form>
+</section>
+<!-- Success Stories / Happy Tails -->
+<section id="success-stories" class="success-stories">
+  <h2>🐾 Happy Tails – Success Stories</h2>
+  <div class="story-container">
+    <div class="story-card">
+      <img src="imgcat1.avif" alt="Luna the rescued cat">
+      <h3>Ginger 🐱</h3>
+      <p>Ginger was found as a kitten, abandoned in a rubbish bin near a fish market, and Mittens was adopted shortly after.
+
+</p>
+    </div>
+
+    <div class="story-card">
+      <img src="imgcat2.avif" alt="Milo the adopted cat">
+      <h3>Chikki 🐾</h3>
+      <p>Chikki 🐾 waited for months in the shelter, watching other cats find homes. One day, A person visited and gently held her — she purred for the first time in weeks.
+That day, chikki finally went home. Now, she sleeps beside him every night, never lonely again. 💕</p>
+    </div>
+
+    <div class="story-card">
+      <img src="imgcat3.avif" alt="Bella the adopted cat">
+      <h3>Bella 💖</h3>
+      <p>Bella was rescued from the streets and given a new life. She’s now healthy, playful, and loves watching birds from the window. 🐈✨</p>
+    </div>
+
+    <!-- Add more .story-card blocks if you want -->
+  </div>
+</section>
+
+
+<section id="cat-health" class="cat-health">
+  <h2>🐾 Cat Health & Care</h2>
+  <h3>Regular vet checkups and a balanced diet keep your cat healthy.</h3>
+  <div class="disease-list">
+    <div class="disease">
+      <h3>Fleas & Ticks</h3>
+      <p>Keep your cat clean and use vet-approved flea treatments.</p>
+    </div>
+    <div class="disease">
+      <h3>Dental Disease</h3>
+      <p>Brush their teeth and give dental treats regularly.</p>
+    </div>
+    <div class="disease">
+      <h3>Obesity</h3>
+      <p>Monitor food portions and encourage active playtime.</p>
+    </div>
+  </div>
+</section>
+
+<section id="cat-foods" class="cat-foods">
+  <h2>🚫 Foods Cats Should Never Eat</h2>
+  <p>Some human foods can be dangerous for cats. Keep your furry friend safe by avoiding these!</p>
+  
+  <div class="food-list">
+    <div class="food">
+      <h3>🍫 Chocolate</h3>
+      <p>Contains theobromine and caffeine — both are toxic to cats and can cause vomiting or seizures.</p>
+    </div>
+
+    <div class="food">
+      <h3>🧅🧄 Onions & Garlic</h3>
+      <p>Can damage red blood cells, leading to anemia and weakness in cats.</p>
+    </div>
+
+    <div class="food">
+      <h3>🍇 Grapes & Raisins</h3>
+      <p>Even a small amount can cause kidney failure in cats — always keep them away!</p>
+    </div>
+
+    <div class="food">
+      <h3>☕ Caffeine</h3>
+      <p>Found in coffee, tea, and soft drinks — harmful to a cat’s heart and nervous system.</p>
+    </div>
+
+    <div class="food">
+      <h3>🍷 Alcohol</h3>
+      <p>Just a tiny bit can cause severe poisoning, vomiting, and breathing issues.</p>
+    </div>
+
+    <div class="food">
+      <h3>🥚🍖 Raw Eggs or Meat</h3>
+      <p>May contain bacteria like Salmonella or E. coli — always feed properly cooked food.</p>
+    </div>
+  </div>
+</section>
+
+
+  <footer>
+    <section id="contact" class="contact">
+    <h3>Contact Us</h3>
+    <p> Email: adoptcats@gmail.com</p>
+    <p> Phone: +91 945XXXXXXX</p>
+    <p> Insta : @everypawdeserveslove</p>
+    <p>facebook :@everypawdeservelove </p>
+    <p class="end-line">🐾 Adopt, Don’t Shop 🩷</p>
+  </footer>
+  <!-- Background Music -->
+<audio id="bg-music" loop>
+  <source src="BGmusic.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<!-- Music Control Button -->
+<div id="music-btn">🎵</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+

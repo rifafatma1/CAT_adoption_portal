@@ -1,0 +1,616 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #fff6f8, #ffeef1, #f86083);
+  background-color: #fff6f8;
+  color: #333;
+  line-height: 1.6;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 70px;
+  background-color: #ffd5dc;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar .logo {
+  color: #d63384;
+  font-weight: 700;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #d63384;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px 100px; /* widened */
+  background-color: #ffeef1;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.hero-text {
+  max-width: 550px;
+}
+
+.hero-text h2 {
+  font-size: 2.3rem;
+  color: #d63384;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.05rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.hero-text button {
+  background-color: #d63384;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hero-text button:hover {
+  background-color: #b9206d;
+}
+
+.hero-img img {
+  width: 600px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+/* Why Adopt Section */
+.why-adopt {
+  text-align: center;
+  padding: 80px 100px;
+  background-color: #fef9f5; /* soft cream/pink tone */
+}
+
+.why-adopt h2 {
+  font-size: 2rem;
+  color: #d47fa6; /* warm pink heading */
+  margin-bottom: 40px;
+}
+
+.benefits-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: contain;
+  gap: 40px;
+}
+
+.benefit {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  width: 400px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  min-height:400px;
+}
+
+.benefit:hover {
+  transform: translateY(-8px);
+  
+}
+.benifit:hover img {
+  transform: scale(1.05);
+  transition: transform 0.4s ease;
+}
+
+.benefit img {
+  width: 280px;
+  height : 200px;
+  object-fit:cover;
+  border-radius:15px;
+  margin:0 auto 20px;
+  display:block;
+  box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+
+.benefit h3 {
+  color: #5b4b8a;
+  margin-bottom: 10px;
+}
+
+.benefit p {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+
+/* 🐾 Cat Breeds Section */
+.breeds {
+  padding: 80px 100px; /* increased padding for openness */
+  text-align: center;
+}
+
+.section-title {
+  text-align : center;
+  color: #d63384;
+  margin-bottom: 50px;
+  font-size: 2.1rem;
+}
+
+.breed-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px; /* increased gap between cards */
+}
+
+
+  /* 🐾 Animation for Cat Cards */
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.cat-card {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: cardFadeIn 1.2s ease forwards;
+}
+
+/* Add staggered delays (makes it look natural) */
+.cat-card:nth-child(1) { animation-delay: 0.2s; }
+.cat-card:nth-child(2) { animation-delay: 0.4s; }
+.cat-card:nth-child(3) { animation-delay: 0.6s; }
+.cat-card:nth-child(4) { animation-delay: 0.8s; }
+.cat-card:nth-child(5) { animation-delay: 1.0s; }
+.cat-card:nth-child(6) { animation-delay: 1.2s; }
+.cat-card:nth-child(7) { animation-delay: 1.4s; }
+.cat-card:nth-child(8) { animation-delay: 1.6s; }
+
+/* Hover animation */
+.cat-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+
+.cat-card:hover {
+  transform: translateY(-5px);
+}
+.cat-card:hover img {
+  transform: scale(1.05);
+  transition: transform 0.4s ease;
+}
+
+
+.cat-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: contain;
+  border-radius: 12px;
+  background-color:#fff;
+}
+
+.cat-card h3 {
+  color: #d63384;
+  margin-top: 15px;
+  font-size: 1.3rem;
+}
+
+.cat-card p {
+  font-size: 1rem;
+  color: #555;
+  margin: 12px 0;
+}
+
+.cat-card button {
+  background-color: #d63384;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cat-card button:hover {
+  background-color: #b9206d;
+}
+
+/* 📞 Footer */
+footer {
+  background-color: #ffd5dc;
+  text-align: center;
+  padding: 35px;
+  margin-top: 70px;
+  color: #444;
+}
+
+footer h3 {
+  color: #d63384;
+  margin-bottom: 10px;
+}
+
+footer .end-line {
+  margin-top: 12px;
+  font-style: italic;
+}
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.adoption-process {
+  background-color: #fff8f0;
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 60px;
+  transition: all 0.3s ease;
+}
+
+.steps-container {
+  display: inline-block;
+  background: #ffe9dc;
+  padding: 20px 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.steps-container:hover {
+  transform: scale(1.05);
+}
+
+/* Each step initially hidden */
+.step {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Reveal one by one when hovered */
+.steps-container:hover .step:nth-child(1) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.1s;
+}
+.steps-container:hover .step:nth-child(2) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s;
+}
+.steps-container:hover .step:nth-child(3) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s;
+}
+.steps-container:hover .step:nth-child(4) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.7s;
+}
+.steps-container:hover .step:nth-child(5) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.9s;
+}
+
+.step {
+  margin: 10px 0;
+  background: #ffd1b3;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 500;
+}
+.cat-health {
+  background-color: #fef4f4;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.disease-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.disease {
+  background: #ffe1e1;
+  padding: 20px;
+  width: 250px;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.disease:hover {
+  transform: translateY(-5px);
+}
+.cat-foods {
+  background-color: #fef4f4;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.cat-foods h2 {
+  font-size: 2em;
+  color: #ea1a82;
+  margin-bottom: 10px;
+}
+
+.cat-foods p {
+  color: #444;
+  margin-bottom: 30px;
+  font-size: 1.1em;
+}
+
+.food-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.food {
+  background: #ffe1e1;
+  padding: 20px;
+  width: 250px;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.food:hover {
+  transform: translateY(-5px);
+}
+
+.food h3 {
+  color: #f91a8d;
+  margin-bottom: 8px;
+}
+
+.food p {
+  font-size: 0.95em;
+  color: #333;
+}
+#music-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f4207b;
+  color: white;
+  font-size: 24px;
+  padding: 10px 14px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#music-btn:hover {
+  transform: scale(1.1);
+  background-color: #ee1a81;
+}
+/* 🌸 Adoption Form Section */
+.adoption-form {
+  background-color: #fff8f0;
+  text-align: center;
+  padding: 50px 20px;
+  border-top: 3px solid #ffb6b9;
+  border-bottom: 3px solid #ffb6b9;
+}
+
+.adoption-form h2 {
+  color: #e31e8b;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.adoption-form p {
+  color: #444;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+#adoption-form button,
+#show-form-btn {
+  background-color: #e31e8b;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 1rem;
+}
+
+#show-form-btn:hover,
+#adoption-form button:hover {
+  background-color: #e31e8b;
+}
+
+#adoption-form form {
+  display: none; /* Hidden by default */
+  background: #fff;
+  margin: 30px auto;
+  max-width: 500px;
+  text-align: left;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.6s ease;
+}
+
+#adoption-form label {
+  display: block;
+  margin-top: 15px;
+  color: #333;
+  font-weight: 600;
+}
+
+#adoption-form input,
+#adoption-form select,
+#adoption-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+}
+
+#adoption-form textarea {
+  resize: none;
+}
+
+/* ✨ Animation for form appearance */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+#thank-you {
+  display: none;
+  color: #e31e8b;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+/* Success Stories Section */
+.success-stories {
+  background-color: #fff8f0;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.success-stories h2 {
+  color: #fc2b8c;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.story-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* Card base style */
+.story-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  width: 280px;
+  padding: 16px;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+/* Image */
+.story-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Text */
+.story-card h3 {
+  color: #f31571;
+  margin-top: 10px;
+}
+.story-card p {
+  color: #555;
+  font-size: 0.95rem;
+  margin-top: 8px;
+}
+
+/* Hover lift */
+.story-card:hover {
+  transform: translateY(-6px);
+}
+
+/* --- Animation: hidden by default --- */
+.story-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+/* When JS adds .show -> visible */
+.story-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
+  
+
+
+
